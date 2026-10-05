@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./venv/bin/python -m pytest:*)",
+      "Bash(./venv/bin/pytest:*)",
+      "Bash(./venv/bin/pip install:*)",
+      "Bash(./venv/bin/pip list:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./shopper.db)"
+    ]
+  }
+}
